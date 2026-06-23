@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+header{
+    text-align: center;
+    color: brown;
+    margin-top: 30px;}
+
+body{
+    background-color: palegoldenrod;}
+
+main{
+    width: 90vw;
+    background-color: brown;
+    color: wheat;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);}
+
+.foto{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px black;
+    height: 60vh;
+}
+
