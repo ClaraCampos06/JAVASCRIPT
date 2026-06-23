@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros Passom Com DOM</title>
 </head>
+<style>
+    body{
+        background-color: blue;
+        color: aliceblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.4em;
+    }
+    
+</style>
 <body>
     <h1>Iniciando com DOM</h1>
+
+    <!-- índice [0] -->
+    <p>Aqui vai o resultado</p>
+    
+    <!-- índice [1] -->
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p> 
+
+    <div id="bloco">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var p0 = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        var block = window.document.getElementById('bloco')
+
+        p1.style.backgroundColor = 'darkred'
+        corpo.style.backgroundColor = 'darkolivegreen'
+        p0.style.color = 'black'
+        p0.style.background = 'yellow'
+        block.style.color = 'red'
+
+        document.write(p1.innerHTML)
+
+    </script>
 </body>
 </html>
