@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(146, 174, 146);
+        }
+        .block{
+            background-color: rgb(23, 55, 32);
+            color: white;
+            padding: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 500px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            border-radius: 50px;
+            box-shadow: 0px 0px 10px black;
+            text-shadow: 0px 0px 4px black;
+        }
+        input{
+            border-radius: 20px;
+        }
+        .anser{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <h1>De qual país você é?</h1>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Enviar" onclick="calcular()">
+        <div id="final" class="anser">
+        </div>
+    </div>
+
+    <script>
+        function calcular(){
+            var p = window.document.getElementById('pais').value
+            var fim = window.document.getElementById('final')
+            
+
+            if (p == 'Brasil'){
+                final.innerHTML = `Você é Brasileiro`
+            } else {
+            
+                final.innerHTML = `Você é Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
