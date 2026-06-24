@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
-        div{
-            display: block;
+        div#area{
             background-color: rgb(118, 47, 47);
             height: 200px;
             width: 200px;
@@ -21,10 +20,28 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmousemove="mover()">
     Click Here...
     </div>
     <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou manso...'
+            a.style.background = 'darkolivegreen'
+        }
+        function entrar(){
+            a.innerText = 'Entrou manso'
+        }
+        function sair(){
+            a.innerText = 'Saiu manso'
+            a.style.background = 'rgb(118, 47, 47)'
+            a.style.color = 'white'
+        }
+        
         
     </script>
 </body>
